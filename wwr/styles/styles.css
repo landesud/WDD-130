@@ -46,7 +46,7 @@ a:hover {
 
 body {
   max-width: 1600px;
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
   background-color: #8ecae6;
   font-family: "Lato", "Verdana", sans-serif;
@@ -148,7 +148,7 @@ footer {
   color: white;
 }
 .home-title {
-  color: #023047;
+  color: #eee;
   margin-top: 10px;
 }
 #hero-msg {
@@ -253,6 +253,99 @@ main section img {
   box-shadow: 5px 5px 10px #6f7364;
 }
 
+.hero-box-r {
+  height: 600px;
+  overflow: hidden;
+}
+.hero-box-r #hero-img {
+  transform: translate(0, -20%);
+}
+
+main > h2 {
+  margin: 40px;
+  text-align: center;
+  font-weight: 700;
+  font-size: 3rem;
+}
+main > p {
+  text-align: center;
+}
+.cards2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: space-between;
+  justify-items: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.card2 {
+  background-color: #ddd;
+  width: 400px;
+  border-radius: 15px;
+  overflow: hidden;
+  margin: 20px 0;
+}
+.card2 picture,
+.card2 img {
+  width: 100%;
+  vertical-align: middle;
+  border: 0;
+}
+.card2 picture {
+  display: block;
+  max-height: 200px;
+  overflow: hidden;
+}
+.card2 img.move {
+  transform: translate(0, -20%);
+}
+.card2 h3 {
+  display: block;
+  text-align: center;
+  font-size: 1.2rem;
+  background-color: #023047;
+  color: #fff;
+  padding: 15px;
+  margin: 0;
+  text-transform: uppercase;
+}
+.card2 .list {
+  height: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.card2 .list ul {
+  list-style: none;
+  padding-left: 0;
+  width: 100%;
+}
+.card2 .list ul li:not(:last-child) {
+  padding: 4px;
+  border-bottom: 1px solid #ccc;
+  width: 80%;
+  margin: 0 auto;
+}
+.card2 .description {
+  font-style: italic;
+  font-size: 1rem;
+  background-color: #023047;
+  color: #fff;
+  padding: 15px;
+  margin: 0;
+  height: 70px;
+}
+.card2 .price {
+  background-color: #ffb703;
+  margin: 0;
+  padding: 15px;
+  font-weight: 700;
+  text-shadow: 2px 1px 4px #777;
+  font-size: 1.6rem;
+  color: #222;
+}
+
 @media screen and (max-width: 900px) {
   #hero,
   .home-grid {
@@ -297,5 +390,13 @@ main section img {
   }
   footer {
     margin-top: 25px;
+  }
+
+  .cards2 {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: space-between;
+    justify-items: center;
+    align-items: center;
   }
 }
