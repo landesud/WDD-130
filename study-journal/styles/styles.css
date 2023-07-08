@@ -19,7 +19,7 @@ h1,
 h2 {
   font-family: "Lato", sans-serif;
 }
-#logo img {
+.logo img {
   width: 5vw;
   min-width: 50px;
   margin-left: 10px;
